@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="ie8">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Youssef Eshak | Data Visual</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="../assets/plugins/pace/pace.min.js"></script>
+    <!-- ================== END BASE JS ================== -->
+
+    <!-- ================== BEGIN PAGE CSS ================== -->
+    <link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
+    <!-- ================== END PAGE CSS ================== -->
+</head>
+<body>
+<div class="page-cover"></div>
+
+<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+
+<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+    <div id="header" class="header navbar-default">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><span class="navbar-logo"></span>Youssef Eshak</a>
+            <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <div data-scrollbar="true" data-height="100%">
+            <ul class="nav">
+                <li class="nav-header">Navigation</li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Description/Source</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="motivations.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Motivations/Reasons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="charts.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Questions/Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-bg"></div>
+
+    <div id="content" class="content">
+        <ol class="breadcrumb pull-right">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Questions/Charts</li>
+        </ol>
+
+        <h1 class="page-header">Questions/Charts</h1>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Questions</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p class="lead">
+                            <ol>
+                                <li>
+                                    What is the percentage of a female receiving a gold medal when competing against others of the same gender and how does that compare to men?
+                                    <ul>
+                                        <li>
+                                            Women have a 33% chance of receiving a gold medal when competing against other women,
+                                            while men have a 34% chance of winning a gold when competing against other men.
+                                            This isn’t a huge difference, in fact women have been competing in the Olympics since 1920 while men have been fighting for the Gold.
+                                            Basically, women have are at 33% while only been competing for 96 years while men are at only 34% and they have been competing for a whopping 120.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    How much more likely is a man to win a gold medal during an Olympic event than a woman under same situation?
+                                    <ul>
+                                        <li>
+                                            Out of every since Olympic event men do seem to have a stunning advantage over women, during the same events people from the same country,
+                                            just different genders have a huge difference in statistical advantage. According to the below data, men have a 36% chance of winning a gold
+                                            medal during an event over women competing in the same event. I thought that at least different countries will invest more in their athletes,
+                                            but it seems that too is not fair. It looks like that men have a high chance of bring home the Gold.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Does the season of event change the percentage advantage between men and women during the summer and winter of an Olympic event and does age cause an                                               advantage?
+                                    <ul>
+                                        <li>
+                                            According to the data, I found that out of all Olympic athletes, women are surprisingly younger, which I thought would give them the advantage,
+                                            you know the younger you are the more energy and power you have and the more training you can go though. But apparently that doesn’t matter.
+                                            With the average age of female athletes being 32 (5 years younger then the average male), men not only still have the advantage of having more
+                                            gold medals in that age but also have the more older athletes still competing. Men max out at 66 while the oldest female athlete caps out at 52
+                                            years of age.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Donut Chart</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div id="nv-donut-chart" class="height-lg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Donut Chart</h4>
+                    </div>
+                    <div class="panel-body">
+                        <svg width="852" height="852" xmlns="http://www.w3.org/2000/svg" version="1.1"><g transform="translate(426, 426)"><g display="none"><path d="M1.3042488410919312e-14,-213A213,213,0,1,1,-1.3042488410919312e-14,213A213,213,0,1,1,1.3042488410919312e-14,-213Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(6.521244205459656e-15,106.5)rotate(90)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;"></text><title>undefined: none</title></g><g><path d="M1.844486399781601e-14,-301.2274887854693A301.2274887854693,301.2274887854693,0,1,1,-257.1183229074305,156.93364210796332L-181.8101096951565,110.96884253084356A213,213,0,1,0,1.3042488410919312e-14,-213Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(224.21884737288795,125.830783349807)rotate(29.300978372811525)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">M</text><title>M: none</title></g><g><path d="M-257.1183229074305,156.93364210796332A301.2274887854693,301.2274887854693,0,0,1,-5.5334591993448027e-14,-301.2274887854693L-3.912746523275793e-14,-213A213,213,0,0,0,-181.8101096951565,110.96884253084356Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(-224.2188473728879,-125.83078334980708)rotate(389.3009783728115)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">F</text><title>F: none</title></g><g><path d="M2.2590252584840514e-14,-368.9268220121708A368.9268220121708,368.9268220121708,0,0,1,225.55389408505198,-291.94595538056205L184.16398333537944,-238.37287438390746A301.2274887854693,301.2274887854693,0,0,0,1.844486399781601e-14,-301.2274887854693Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(108.23085882549914,-317.11635288653895)rotate(-71.15538105046343)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Winter</text><title>Winter: none</title></g><g><path d="M225.55389408505198,-291.94595538056205A368.9268220121708,368.9268220121708,0,1,1,-314.904347321682,192.20367332053112L-257.1183229074305,156.93364210796332A301.2274887854693,301.2274887854693,0,1,0,184.16398333537944,-238.37287438390746Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(223.57688234228527,249.5798023724455)rotate(48.145597322348074)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Summer</text><title>Summer: none</title></g><g><path d="M-314.904347321682,192.20367332053112A368.9268220121708,368.9268220121708,0,0,1,-125.81424072261306,-346.8108660803354L-102.72689738203147,-283.1698863831774A301.2274887854693,301.2274887854693,0,0,0,-257.1183229074305,156.93364210796332Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(-316.18572489978357,-110.92018499697605)rotate(379.3312306900103)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Summer</text><title>Summer: none</title></g><g><path d="M-125.81424072261306,-346.8108660803354A368.9268220121708,368.9268220121708,0,0,1,-6.777075775452153e-14,-368.9268220121708L-5.5334591993448027e-14,-301.2274887854693A301.2274887854693,301.2274887854693,0,0,0,-102.72689738203147,-283.1698863831774Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(-58.01129555708961,-330.0172566063069)rotate(440.03025231719874)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Winter</text><title>Winter: none</title></g><g><path d="M2.6084976821838624e-14,-426A426,426,0,0,1,90.1931252801063,-416.3426475299006L78.1095377392845,-360.56330943976434A368.9268220121708,368.9268220121708,0,0,0,2.2590252584840514e-14,-368.9268220121708Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(42.31617447582753,-395.2043831567708)rotate(-83.88838825952627)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Bronze</text><title>Bronze: 1,055</title></g><g><path d="M90.1931252801063,-416.3426475299006A426,426,0,0,1,179.81848411215307,-386.18818310715744L155.72737531113302,-334.4487772121547A368.9268220121708,368.9268220121708,0,0,0,78.1095377392845,-360.56330943976434Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(126.74520048894013,-376.71317635783686)rotate(-71.40447991761071)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Gold</text><title>Gold: 1,100</title></g><g><path d="M179.81848411215307,-386.18818310715744A426,426,0,0,1,260.44720293354624,-337.11015185558L225.55389408505198,-291.94595538056205A368.9268220121708,368.9268220121708,0,0,0,155.72737531113302,-334.4487772121547Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 105, 191); fill-rule: evenodd;"></path><text transform="translate(206.65890591297486,-339.513268806161)rotate(-58.67147270854789)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Silver</text><title>Silver: 1,098</title></g><g><path d="M260.44720293354624,-337.11015185558A426,426,0,0,1,411.6991385313632,109.45236101854283L356.5419126843293,94.78852514624369A368.9268220121708,368.9268220121708,0,0,0,225.55389408505198,-291.94595538056205Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(376.45611012593446,-127.50670663711246)rotate(-18.71138002059733)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Bronze</text><title>Bronze: 5,800</title></g><g><path d="M411.6991385313632,109.45236101854283A426,426,0,0,1,46.0823260744894,423.5001997916464L39.90846504598585,366.76193152735095A368.9268220121708,368.9268220121708,0,0,0,356.5419126843293,94.78852514624369Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(258.9803250530258,301.5068064306699)rotate(49.33895468589081)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Gold</text><title>Gold: 5,947</title></g><g><path d="M46.0823260744894,423.5001997916464A426,426,0,0,1,-363.620219390313,221.93768506168712L-314.904347321682,192.20367332053112A368.9268220121708,368.9268220121708,0,0,0,39.90846504598585,366.76193152735095Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 105, 191); fill-rule: evenodd;"></path><text transform="translate(-175.45710142569413,356.63983042824316)rotate(296.19593202883624)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Silver</text><title>Silver: 5,594</title></g><g><path d="M-363.620219390313,221.93768506168712A426,426,0,0,1,-425.63402918492903,-17.65426860005717L-368.60988198927566,-15.289045092883445A368.9268220121708,368.9268220121708,0,0,0,-314.904347321682,192.20367332053112Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(-384.78335572271914,99.5938363923979)rotate(345.4885427394438)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Gold</text><title>Gold: 2,915</title></g><g><path d="M-425.63402918492903,-17.65426860005717A426,426,0,0,1,-342.40999847813436,-253.43913064521834L-296.5357571918553,-219.48472545180226A368.9268220121708,368.9268220121708,0,0,0,-368.60988198927566,-15.289045092883445Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(-374.80123889562793,-132.29207992504615)rotate(379.441297631308)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Bronze</text><title>Bronze: 2,946</title></g><g><path d="M-342.40999847813436,-253.43913064521834A426,426,0,0,1,-145.27777149817808,-400.46269377873784L-125.81424072261306,-346.8108660803354A368.9268220121708,368.9268220121708,0,0,0,-296.5357571918553,-219.48472545180226Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 105, 191); fill-rule: evenodd;"></path><text transform="translate(-237.62319159516494,-318.61007815937006)rotate(413.28398558187433)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Silver</text><title>Silver: 2,896</title></g><g><path d="M-145.27777149817808,-400.46269377873784A426,426,0,0,1,-98.6769345502734,-414.41387837252876L-85.45673208811114,-358.89294635144444A368.9268220121708,368.9268220121708,0,0,0,-125.81424072261306,-346.8108660803354Z" style="stroke: rgb(255, 255, 255); fill: rgb(191, 105, 105); fill-rule: evenodd;"></path><text transform="translate(-113.99236530693715,-380.76620614272235)rotate(433.33354788877443)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Bronze</text><title>Bronze: 565</title></g><g><path d="M-98.6769345502734,-414.41387837252876A426,426,0,0,1,-49.7629526617897,-423.08350067378007L-43.095981172432325,-366.40105950554414A368.9268220121708,368.9268220121708,0,0,0,-85.45673208811114,-358.89294635144444Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 191, 105); fill-rule: evenodd;"></path><text transform="translate(-69.36615702246337,-391.36364081059867)rotate(439.94915036045313)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Gold</text><title>Gold: 577</title></g><g><path d="M-49.7629526617897,-423.08350067378007A426,426,0,0,1,-7.825493046551586e-14,-426L-6.777075775452153e-14,-368.9268220121708A368.9268220121708,368.9268220121708,0,0,0,-43.095981172432325,-366.40105950554414Z" style="stroke: rgb(255, 255, 255); fill: rgb(105, 105, 191); fill-rule: evenodd;"></path><text transform="translate(-23.254569183664884,-396.7825451058482)rotate(446.64585478887744)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Silver</text><title>Silver: 579</title></g></g></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<!--[if lt IE 9]>
+<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+<script src="../assets/crossbrowserjs/respond.min.js"></script>
+<script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+<script src="../assets/js/theme/transparent.min.js"></script>
+<script src="../assets/js/apps.min.js"></script>
+<!-- ================== END BASE JS ================== -->
+
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="../assets/plugins/nvd3/build/nv.d3.js"></script>
+<script src="../assets/js/chart-d3.demo.js"></script>
+<!-- ================== END PAGE LEVEL JS ================== -->
+
+<script>
+    $(document).ready(function() {
+        App.init();
+        ChartNvd3.init();
+    });
+</script>
+</body>
+</html>

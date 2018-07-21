@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="ie8">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Youssef Eshak | Data Visual</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+	<div class="page-cover"></div>
+	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+		<div id="header" class="header navbar-default">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span>Youssef Eshak</a>
+				<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		</div>
+		<div id="sidebar" class="sidebar">
+			<div data-scrollbar="true" data-height="100%">
+				<ul class="nav">
+					<li class="nav-header">Navigation</li>
+						<li>
+							<a href="index.html">
+								<i class="fa fa-th-large"></i>
+								<span>Description/Source</span>
+							</a>
+						</li>
+						<li>
+							<a href="motivations.html">
+								<i class="fa fa-th-large"></i>
+								<span>Motivations/Reasons</span>
+							</a>
+						</li>
+						<li>
+							<a href="charts.html">
+								<i class="fa fa-th-large"></i>
+								<span>Questions/Charts</span>
+							</a>
+						</li>
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sidebar-bg"></div>
+		<div id="content" class="content">
+			<ol class="breadcrumb pull-right">
+				<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+				<li class="breadcrumb-item active">Description/Source</li>
+			</ol>
+			<h1 class="page-header">Description/Source</h1>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-inverse">
+						<div class="panel-heading">
+							<h4 class="panel-title">Description/Source</h4>
+						</div>
+						<div class="panel-body">
+							<p class="lead">
+								This date set called Athlete events from the free data set website www.keggle.com is a collection of data of ever Olympics medal winner from 1896-2016.
+								The data is organized into 15 columns that contain information from simple info about the athlete’s sex to his height, weight and age.
+								The date has a lot of N/A values, I tried to use R-stuido to clean up the date but I wanted to check it out in more detail,
+								so I used Excel and opened it as a CSV file and played with it. All in all, it is a very clean and nice date set.
+								In my archived folder submitted via blackboard you will find the original file and the cleaned one that I used.
+								There weren’t to many lines of N/A values when compared to the file over all, and they were in places that didn’t matter to the questions I was asking.
+								So instead of Just having it I decide to remove all the lines with N/A and was left with a much cleaner dataset.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+	</div>
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../assets/crossbrowserjs/respond.min.js"></script>
+		<script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+	<script src="../assets/js/theme/transparent.min.js"></script>
+	<script src="../assets/js/apps.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+	
+	<script>
+		$(document).ready(function() {
+			COLOR_BLACK_TRANSPARENT_2 = 'rgba(255,255,255,0.15)';
+			COLOR_WHITE = '#333';
+			App.init();
+			Dashboard.init();
+		});
+	</script>
+</body>
+</html>

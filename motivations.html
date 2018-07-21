@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="ie8">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Youssef Eshak | Data Visual</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+    <link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="../assets/plugins/pace/pace.min.js"></script>
+    <!-- ================== END BASE JS ================== -->
+</head>
+<body>
+<div class="page-cover"></div>
+<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+
+<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+    <div id="header" class="header navbar-default">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><span class="navbar-logo"></span>Youssef Eshak</a>
+            <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <div data-scrollbar="true" data-height="100%">
+            <ul class="nav">
+                <li class="nav-header">Navigation</li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Description/Source</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="motivations.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Motivations/Reasons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="charts.html">
+                        <i class="fa fa-th-large"></i>
+                        <span>Questions/Charts</span>
+                    </a>
+                </li>
+                <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-bg"></div>
+
+    <div id="content" class="content">
+        <ol class="breadcrumb pull-right">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Motivations/Reasons</li>
+        </ol>
+        <h1 class="page-header">Motivations/Reasons</h1>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Motivations/Reasons</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p class="lead">
+                            My reasons for choosing this data set are as follows.
+                        <ol>
+                            <li>
+                                My sister is always talking about how women are continentally miss represented in sports and how there aren’t enough
+                                facts to support why men are better at sports.
+
+                            </li>
+                            <li>
+                                I didn’t know I was going to end up with an Olympics data set, but I am happy I came across this,
+                                the Olympics are by far the most co-ed sport competition that I have ever come across.
+                                Women play against women and men against men, so it is a level playing field.
+                            </li>
+                            <li>
+                                I like this data set because the way it is broken up I am able to compare percentages and age groups based of gender
+                                very easily. It isn’t a matter of just saying men outnumber the women and there for are better.
+                                It becomes a matter of how many gold medals woman has compared to men based of the overall percentage of same gender
+                                competitors.
+                            </li>
+                            <li>
+                                The data set doesn’t require a lot of maintained. Many data sets that I came across when trying to fine sport date were over
+                                the top dramatic. They compared hotels and rest and how many trainers which is amazing but way over the top for what
+                                I needed this set for.
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<!--[if lt IE 9]>
+<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+<script src="../assets/crossbrowserjs/respond.min.js"></script>
+<script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+<script src="../assets/js/theme/transparent.min.js"></script>
+<script src="../assets/js/apps.min.js"></script>
+<!-- ================== END BASE JS ================== -->
+
+
+<script>
+    $(document).ready(function() {
+        COLOR_BLACK_TRANSPARENT_2 = 'rgba(255,255,255,0.15)';
+        COLOR_WHITE = '#333';
+        App.init();
+        Dashboard.init();
+    });
+</script>
+</body>
+</html>
